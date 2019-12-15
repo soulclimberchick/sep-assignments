@@ -8,11 +8,16 @@ class MyQueue
   end
 
   def enqueue(element)
+    @queue << element
+    @tail = @queue.last
+    @head = @queue.first
   end
 
   def dequeue
+    @queue.shift
   end
 
   def empty?
+    @queue.length <=0
   end
 end
