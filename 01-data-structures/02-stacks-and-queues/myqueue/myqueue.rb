@@ -14,10 +14,23 @@ class MyQueue
   end
 
   def dequeue
-    @queue.shift
+    raise "The queue is empty." if @queue.empty?
+    temp = @queue.first
+    @queue.delete_at(0)
+    @head = @queue.first
+    @tail = @queue.last
+    return temp
   end
 
   def empty?
     @queue.length <=0
   end
 end
+
+#for testing in irb
+#require './myqueue.rb'
+Q = MyQueue.new
+Q.enqueue "john"
+Q.enqueue "linda"
+Q.enqueue "nelson"
+Q.enqueue "lizz"
