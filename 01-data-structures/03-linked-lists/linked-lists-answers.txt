@@ -2,14 +2,31 @@ Q: What is Spatial Locality and why does it benefit performance?
 
 A: Spatial Locality is reference to where data is stored. If all of the data you are looking for is in one place and cached,
   it's easy to find and sift through quickly. When data is stored in many places, it makes it more time intensive to go
-  from block to block to find what you are looking for. 
+  from block to block to find what you are looking for.
 
 
 Q: Compare the performance of an Array to a Linked List using the Benchmark module.
 
   Qq: Compare the time it takes to create a 10,000 item Array to appending 10,000 items to a Linked List.
+  A1:       user     system      total        real
+          0.001170   0.000002   0.001172 (  0.001170)
+
+  A2:       user     system      total        real
+          0.008459   0.000063   0.008522 (  0.008721)
 
   Qq: Compare the time it takes to access the 5000th element of the Array and the 5000th Node in the Linked List.
+  A1:        user     system      total        real
+          0.001913   0.000016   0.001929 (  0.001937)
+
+  A2:        user     system      total        real
+          0.001409   0.000176   0.001585 (  0.001583)
+
 
   Qq: Compare the time it takes to remove the 5000th element from the Array to removing the 5000th Node in the Linked List.
       In the Array, the 5001st item becomes the 5000th, and so on.
+  A1:       user     system      total        real
+          0.000151   0.000002   0.000153 (  0.000151)
+
+
+  A2:       user     system      total        real
+          0.001110   0.001479   0.002589 (  0.002587)

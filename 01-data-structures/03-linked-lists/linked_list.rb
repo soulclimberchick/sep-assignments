@@ -104,8 +104,10 @@ class LinkedList
 end
 
 #for testing in irb
-#require './linked_list.rb'
-# L.add_to_tail "nancy"
-# L.add_to_front "joan"
-# L.add_to_tail "sylvia"
-# L.add_to_tail "sandy"
+# require './linked_list.rb'
+# # n1 = Node.new("Rob")
+# # n2 = Node.new("Ben")
+# # n3 = Node.new("Mike")
+# require 'benchmark'
+#
+# llist = LinkedList.new
