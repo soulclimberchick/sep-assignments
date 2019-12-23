@@ -1,0 +1,6 @@
+Q: Explain why doubling the size of the underlying array of your HashClass may be a poor idea
+
+A: Doubling the size of the array from the beginning causes more work for the processor and memory for no reason
+and there is not a guarantee that the empty spaces will be filled, so you've then created more work for nothing.
+It makes more sense to grow the array as needed. As noted in the assignment, increasing the opportunity
+for more fragmentation is also costly as it can lead to data corruption. 
